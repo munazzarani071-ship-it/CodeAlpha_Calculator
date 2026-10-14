@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculator | CodeAlpha</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="calc" aria-label="Calculator">
+  <div class="screen">
+    <div class="expr" id="expr" aria-hidden="true"></div>
+    <output class="value" id="value" aria-live="polite">0</output>
+  </div>
+  <div class="keys">
+    <button class="fn" data-act="clear">AC</button>
+    <button class="fn" data-act="back" aria-label="Backspace">&#9003;</button>
+    <button class="fn" data-act="percent">%</button>
+    <button class="op" data-op="/" aria-label="Divide">&divide;</button>
+
+    <button data-num="7">7</button><button data-num="8">8</button><button data-num="9">9</button>
+    <button class="op" data-op="*" aria-label="Multiply">&times;</button>
+
+    <button data-num="4">4</button><button data-num="5">5</button><button data-num="6">6</button>
+    <button class="op" data-op="-" aria-label="Subtract">&minus;</button>
+
+    <button data-num="1">1</button><button data-num="2">2</button><button data-num="3">3</button>
+    <button class="op" data-op="+" aria-label="Add">+</button>
+
+    <button class="fn" data-act="sign" aria-label="Toggle sign">&plusmn;</button>
+    <button data-num="0">0</button>
+    <button data-act="dot">.</button>
+    <button class="eq" data-act="equals" aria-label="Equals">=</button>
+  </div>
+  <p class="hint">Keyboard: 0-9 . + - * / Enter Backspace Esc</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
